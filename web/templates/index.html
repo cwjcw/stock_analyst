@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>技术指标计算助手</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-layer"></div>
+    <main class="shell">
+      <section id="authShell" class="auth-shell">
+        <div class="auth-hero panel">
+          <p class="eyebrow">技术指标计算助手</p>
+          <h1>登录后查看趋势与时机</h1>
+          <p class="hero-copy">
+            面向中文用户的股票技术指标工作台。登录后可以管理自选股票、按分组分析、查看趋势判断与时机判断，并导出中文报告。
+          </p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <strong>趋势判断</strong>
+              <span>用历史日线加最新一分钟线，判断值不值得参与。</span>
+            </article>
+            <article class="feature-card">
+              <strong>时机判断</strong>
+              <span>用分钟序列判断当天更适合买入、卖出还是观望。</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="auth-panel panel">
+          <div class="auth-tabs">
+            <button class="auth-tab active" data-auth-tab="login">登录</button>
+            <button class="auth-tab" data-auth-tab="register">注册</button>
+            <button class="auth-tab" data-auth-tab="forgot">找回密码</button>
+          </div>
+
+          <form id="loginForm" class="auth-form">
+            <h2>登录账号</h2>
+            <div class="form-row">
+              <label>用户名</label>
+              <input id="loginUserId" autocomplete="username" placeholder="请输入用户名" />
+            </div>
+            <div class="form-row">
+              <label>密码</label>
+              <input id="loginPassword" type="password" autocomplete="current-password" placeholder="请输入密码" />
+            </div>
+            <button type="submit" class="btn primary wide">登录并进入工作台</button>
+          </form>
+
+          <form id="registerForm" class="auth-form hidden">
+            <h2>注册账号</h2>
+            <div class="form-row">
+              <label>用户名</label>
+              <input id="registerUserId" autocomplete="username" placeholder="用户名必填" />
+            </div>
+            <div class="form-row">
+              <label>显示名称</label>
+              <input id="registerDisplayName" placeholder="不填则默认使用用户名" />
+            </div>
+            <div class="form-row">
+              <label>邮箱</label>
+              <input id="registerEmail" autocomplete="email" placeholder="注册后会收到欢迎邮件" />
+            </div>
+            <div class="form-row">
+              <label>密码</label>
+              <input id="registerPassword" type="password" autocomplete="new-password" placeholder="至少 8 位" />
+            </div>
+            <button type="submit" class="btn primary wide">注册并登录</button>
+          </form>
+
+          <form id="forgotForm" class="auth-form hidden">
+            <h2>找回密码</h2>
+            <div class="form-row">
+              <label>用户名</label>
+              <input id="forgotUserId" placeholder="输入用户名后，系统会发送随机 8 位密码到注册邮箱" />
+            </div>
+            <button type="submit" class="btn primary wide">发送新密码到邮箱</button>
+          </form>
+
+          <div id="authStatus" class="status auth-status">请先登录后继续。</div>
+        </div>
+      </section>
+
+      <section id="appShell" class="app-shell hidden">
+        <header class="hero hero-app">
+          <div>
+            <p class="eyebrow">技术指标计算助手</p>
+            <h1>趋势判断看方向，时机判断看进出</h1>
+            <p class="hero-copy">
+              登录后，你可以按分组管理股票、自定义用户信息、批量分析并导出中文报告。
+            </p>
+          </div>
+          <div class="hero-badge">
+            <div>当前用户</div>
+            <strong id="heroUserName">-</strong>
+            <div class="divider"></div>
+            <div>风险偏好</div>
+            <strong id="heroRiskLevel">-</strong>
+          </div>
+        </header>
+
+        <section class="dashboard-layout">
+          <aside class="nav-panel panel">
+            <div class="profile-chip">
+              <div>
+                <strong id="navDisplayName">-</strong>
+                <p id="navEmail">-</p>
+              </div>
+            </div>
+            <nav class="nav-list">
+              <button class="nav-item active" data-view="overview">总览</button>
+              <button class="nav-item" data-view="stocks">股票关注</button>
+              <button class="nav-item" data-view="results">分析结果</button>
+              <button class="nav-item" data-view="profile">用户中心</button>
+              <button class="nav-item" data-view="guide">使用说明</button>
+            </nav>
+            <button id="logoutBtn" class="btn ghost wide">退出登录</button>
+          </aside>
+
+          <section class="content-panel">
+            <div id="appStatus" class="status">欢迎回来。</div>
+
+            <section class="view-section active" data-view-panel="overview">
+              <div class="summary-grid">
+                <article class="summary-card panel">
+                  <span>股票数量</span>
+                  <strong id="summaryStockCount">0</strong>
+                </article>
+                <article class="summary-card panel">
+                  <span>分组数量</span>
+                  <strong id="summaryGroupCount">0</strong>
+                </article>
+                <article class="summary-card panel">
+                  <span>报告数量</span>
+                  <strong id="summaryReportCount">0</strong>
+                </article>
+              </div>
+
+              <div class="panel">
+                <div class="section-head">
+                  <h2>最近报告</h2>
+                  <span class="pill">自动按修改时间排序</span>
+                </div>
+                <div id="recentReports" class="result-list"></div>
+              </div>
+            </section>
+
+            <section class="view-section" data-view-panel="stocks">
+              <div class="workspace-grid">
+                <section class="panel">
+                  <h2>新增或维护股票</h2>
+                  <div class="form-row">
+                    <label>股票代码</label>
+                    <input id="tsCode" placeholder="例如 000001.SZ" />
+                  </div>
+                  <div class="form-row">
+                    <label>股票名称</label>
+                    <input id="stockName" placeholder="可选，便于识别" />
+                  </div>
+                  <div class="form-row">
+                    <label>所属概念板块</label>
+                    <textarea id="conceptBoards" rows="3" placeholder="输入 6 位股票代码后自动带出" readonly></textarea>
+                  </div>
+                  <div class="form-row">
+                    <label>分组名称</label>
+                    <input id="groupName" value="默认分组" />
+                  </div>
+                  <div class="actions">
+                    <button id="addStockBtn" class="btn primary">加入股票池</button>
+                    <button id="removeStockBtn" class="btn ghost">移除股票</button>
+                  </div>
+                </section>
+
+                <section class="panel">
+                  <div class="toolbar">
+                    <div>
+                      <h2>股票池</h2>
+                      <p class="muted">可按分组查看，也可以多选后直接分析。</p>
+                    </div>
+                    <div class="toolbar-actions">
+                      <select id="minutePeriod">
+                        <option value="1m" selected>1 分钟最新线</option>
+                        <option value="5m">5 分钟最新线</option>
+                        <option value="10m">10 分钟最新线</option>
+                      </select>
+                      <button id="selectAllBtn" class="btn">全选</button>
+                      <button id="analyzeBtn" class="btn primary">分析所选股票</button>
+                    </div>
+                  </div>
+                  <div class="section-head">
+                    <h3>我的关注</h3>
+                    <span id="selectedCount" class="pill">0 已选</span>
+                  </div>
+                  <div id="stockPool" class="stock-list"></div>
+                </section>
+              </div>
+            </section>
+
+            <section class="view-section" data-view-panel="results">
+              <div class="panel">
+                <div class="section-head">
+                  <h2>分析结果</h2>
+                  <span id="resultCount" class="pill">0 结果</span>
+                </div>
+                <div id="results" class="result-list"></div>
+              </div>
+            </section>
+
+            <section class="view-section" data-view-panel="profile">
+              <div class="workspace-grid">
+                <section class="panel">
+                  <h2>用户中心</h2>
+                  <div class="form-row">
+                    <label>用户名</label>
+                    <input id="profileUserId" disabled />
+                  </div>
+                  <div class="form-row">
+                    <label>注册邮箱</label>
+                    <input id="profileEmail" disabled />
+                  </div>
+                  <div class="form-row">
+                    <label>显示名称</label>
+                    <input id="profileDisplayName" />
+                  </div>
+                  <div class="form-row">
+                    <label>手机号</label>
+                    <input id="profilePhone" />
+                  </div>
+                  <div class="form-row">
+                    <label>风险偏好</label>
+                    <select id="profileRiskLevel">
+                      <option value="保守">保守</option>
+                      <option value="稳健">稳健</option>
+                      <option value="积极">积极</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <label>个人简介</label>
+                    <textarea id="profileBio" rows="4" placeholder="介绍你的交易风格、关注方向等"></textarea>
+                  </div>
+                  <div class="form-row">
+                    <label>策略备注</label>
+                    <textarea id="profileStrategyNote" rows="4" placeholder="记录自己的选股思路或执行规则"></textarea>
+                  </div>
+                  <button id="saveProfileBtn" class="btn primary">保存用户资料</button>
+                </section>
+
+                <section class="panel">
+                  <h2>修改密码</h2>
+                  <div class="form-row">
+                    <label>当前密码</label>
+                    <input id="currentPassword" type="password" autocomplete="current-password" />
+                  </div>
+                  <div class="form-row">
+                    <label>新密码</label>
+                    <input id="newPassword" type="password" autocomplete="new-password" placeholder="至少 8 位" />
+                  </div>
+                  <button id="changePasswordBtn" class="btn primary">修改密码</button>
+                </section>
+              </div>
+            </section>
+
+            <section class="view-section" data-view-panel="guide">
+              <div class="panel guide-grid">
+                <article class="guide-card">
+                  <h2>你现在能做什么</h2>
+                  <ul>
+                    <li>注册、登录、找回密码，全流程中文化。</li>
+                    <li>按分组管理自选股票，多选批量分析。</li>
+                    <li>查看趋势判断、时机判断和完整中文报告。</li>
+                    <li>导出 Markdown 报告，便于留档和复盘。</li>
+                  </ul>
+                </article>
+                <article class="guide-card">
+                  <h2>分析逻辑</h2>
+                  <ul>
+                    <li>趋势判断：历史日线 + 最新一分钟线。</li>
+                    <li>时机判断：分钟线序列 + 最新一分钟线。</li>
+                    <li>先决定是否值得参与，再决定盘中何时操作。</li>
+                  </ul>
+                </article>
+                <article class="guide-card">
+                  <h2>后续建议</h2>
+                  <ul>
+                    <li>加入分析历史筛选和用户级导出中心。</li>
+                    <li>增加指标强弱评分与买卖信号总览。</li>
+                    <li>补充板块、资金流、财务指标等扩展筛选页。</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

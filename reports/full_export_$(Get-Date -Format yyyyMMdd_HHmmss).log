@@ -1,0 +1,855 @@
+[export] mode=all total=5510 workers=8 full_refresh=False
+***** xtdata连接成功 2026-04-24 23:44:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:44:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[1/5510] ok 000004.SZ
+[export] 000004.SZ tushare_daily: data/market_store/000004.SZ/000004.SZ_tushare_daily.parquet rows=529 added=529 window=20240214-20260424
+[export] 000004.SZ tushare_moneyflow: data/market_store/000004.SZ/000004.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000004.SZ qmt_10min: data/market_store/000004.SZ/000004.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:45:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[2/5510] ok 000002.SZ
+[export] 000002.SZ tushare_daily: data/market_store/000002.SZ/000002.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000002.SZ tushare_moneyflow: data/market_store/000002.SZ/000002.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000002.SZ qmt_10min: data/market_store/000002.SZ/000002.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:45:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[3/5510] ok 000006.SZ
+[export] 000006.SZ tushare_daily: data/market_store/000006.SZ/000006.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000006.SZ tushare_moneyflow: data/market_store/000006.SZ/000006.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000006.SZ qmt_10min: data/market_store/000006.SZ/000006.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[4/5510] ok 000007.SZ
+[export] 000007.SZ tushare_daily: data/market_store/000007.SZ/000007.SZ_tushare_daily.parquet rows=529 added=529 window=20240214-20260424
+[export] 000007.SZ tushare_moneyflow: data/market_store/000007.SZ/000007.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000007.SZ qmt_10min: data/market_store/000007.SZ/000007.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:46:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:46:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[5/5510] ok 000009.SZ
+[export] 000009.SZ tushare_daily: data/market_store/000009.SZ/000009.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000009.SZ tushare_moneyflow: data/market_store/000009.SZ/000009.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000009.SZ qmt_10min: data/market_store/000009.SZ/000009.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[6/5510] ok 000016.SZ
+[export] 000016.SZ tushare_daily: data/market_store/000016.SZ/000016.SZ_tushare_daily.parquet rows=520 added=520 window=20240214-20260424
+[export] 000016.SZ tushare_moneyflow: data/market_store/000016.SZ/000016.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000016.SZ qmt_10min: data/market_store/000016.SZ/000016.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:47:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:48:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[7/5510] ok 000012.SZ
+[export] 000012.SZ tushare_daily: data/market_store/000012.SZ/000012.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000012.SZ tushare_moneyflow: data/market_store/000012.SZ/000012.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000012.SZ qmt_10min: data/market_store/000012.SZ/000012.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[8/5510] ok 000008.SZ
+[export] 000008.SZ tushare_daily: data/market_store/000008.SZ/000008.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000008.SZ tushare_moneyflow: data/market_store/000008.SZ/000008.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000008.SZ qmt_10min: data/market_store/000008.SZ/000008.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:48:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[9/5510] ok 000020.SZ
+[export] 000020.SZ tushare_daily: data/market_store/000020.SZ/000020.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000020.SZ tushare_moneyflow: data/market_store/000020.SZ/000020.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000020.SZ qmt_10min: data/market_store/000020.SZ/000020.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:49:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[10/5510] ok 000014.SZ
+[export] 000014.SZ tushare_daily: data/market_store/000014.SZ/000014.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000014.SZ tushare_moneyflow: data/market_store/000014.SZ/000014.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000014.SZ qmt_10min: data/market_store/000014.SZ/000014.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:49:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[11/5510] ok 000017.SZ
+[export] 000017.SZ tushare_daily: data/market_store/000017.SZ/000017.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000017.SZ tushare_moneyflow: data/market_store/000017.SZ/000017.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000017.SZ qmt_10min: data/market_store/000017.SZ/000017.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:50:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[12/5510] ok 000026.SZ
+[export] 000026.SZ tushare_daily: data/market_store/000026.SZ/000026.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000026.SZ tushare_moneyflow: data/market_store/000026.SZ/000026.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000026.SZ qmt_10min: data/market_store/000026.SZ/000026.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:50:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[13/5510] ok 000010.SZ
+[export] 000010.SZ tushare_daily: data/market_store/000010.SZ/000010.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000010.SZ tushare_moneyflow: data/market_store/000010.SZ/000010.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000010.SZ qmt_10min: data/market_store/000010.SZ/000010.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:50:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[14/5510] ok 000028.SZ
+[export] 000028.SZ tushare_daily: data/market_store/000028.SZ/000028.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000028.SZ tushare_moneyflow: data/market_store/000028.SZ/000028.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000028.SZ qmt_10min: data/market_store/000028.SZ/000028.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:51:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[15/5510] ok 000021.SZ
+[export] 000021.SZ tushare_daily: data/market_store/000021.SZ/000021.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000021.SZ tushare_moneyflow: data/market_store/000021.SZ/000021.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000021.SZ qmt_10min: data/market_store/000021.SZ/000021.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:51:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[16/5510] ok 000001.SZ
+[export] 000001.SZ tushare_daily: data/market_store/000001.SZ/000001.SZ_tushare_daily.parquet rows=530 added=0 window=20260422-20260424
+[export] 000001.SZ tushare_moneyflow: data/market_store/000001.SZ/000001.SZ_tushare_moneyflow.parquet rows=58 added=0 window=20260422-20260424
+[export] 000001.SZ qmt_10min: data/market_store/000001.SZ/000001.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:52:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[17/5510] ok 000019.SZ
+[export] 000019.SZ tushare_daily: data/market_store/000019.SZ/000019.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000019.SZ tushare_moneyflow: data/market_store/000019.SZ/000019.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000019.SZ qmt_10min: data/market_store/000019.SZ/000019.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:52:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[18/5510] ok 000027.SZ
+[export] 000027.SZ tushare_daily: data/market_store/000027.SZ/000027.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000027.SZ tushare_moneyflow: data/market_store/000027.SZ/000027.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000027.SZ qmt_10min: data/market_store/000027.SZ/000027.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:52:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:53:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[19/5510] ok 000034.SZ
+[export] 000034.SZ tushare_daily: data/market_store/000034.SZ/000034.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000034.SZ tushare_moneyflow: data/market_store/000034.SZ/000034.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000034.SZ qmt_10min: data/market_store/000034.SZ/000034.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:53:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[20/5510] ok 000025.SZ
+[export] 000025.SZ tushare_daily: data/market_store/000025.SZ/000025.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000025.SZ tushare_moneyflow: data/market_store/000025.SZ/000025.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000025.SZ qmt_10min: data/market_store/000025.SZ/000025.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[21/5510] ok 000011.SZ
+[export] 000011.SZ tushare_daily: data/market_store/000011.SZ/000011.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000011.SZ tushare_moneyflow: data/market_store/000011.SZ/000011.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000011.SZ qmt_10min: data/market_store/000011.SZ/000011.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:53:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[22/5510] ok 000029.SZ
+[export] 000029.SZ tushare_daily: data/market_store/000029.SZ/000029.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000029.SZ tushare_moneyflow: data/market_store/000029.SZ/000029.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000029.SZ qmt_10min: data/market_store/000029.SZ/000029.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:54:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[23/5510] ok 000035.SZ
+[export] 000035.SZ tushare_daily: data/market_store/000035.SZ/000035.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000035.SZ tushare_moneyflow: data/market_store/000035.SZ/000035.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000035.SZ qmt_10min: data/market_store/000035.SZ/000035.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:55:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[24/5510] ok 000042.SZ
+[export] 000042.SZ tushare_daily: data/market_store/000042.SZ/000042.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000042.SZ tushare_moneyflow: data/market_store/000042.SZ/000042.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000042.SZ qmt_10min: data/market_store/000042.SZ/000042.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:55:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:56:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[25/5510] ok 000031.SZ
+[export] 000031.SZ tushare_daily: data/market_store/000031.SZ/000031.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000031.SZ tushare_moneyflow: data/market_store/000031.SZ/000031.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000031.SZ qmt_10min: data/market_store/000031.SZ/000031.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:56:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[26/5510] ok 000048.SZ
+[export] 000048.SZ tushare_daily: data/market_store/000048.SZ/000048.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000048.SZ tushare_moneyflow: data/market_store/000048.SZ/000048.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000048.SZ qmt_10min: data/market_store/000048.SZ/000048.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[27/5510] ok 000030.SZ
+[export] 000030.SZ tushare_daily: data/market_store/000030.SZ/000030.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000030.SZ tushare_moneyflow: data/market_store/000030.SZ/000030.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000030.SZ qmt_10min: data/market_store/000030.SZ/000030.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:56:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[28/5510] ok 000039.SZ
+[export] 000039.SZ tushare_daily: data/market_store/000039.SZ/000039.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000039.SZ tushare_moneyflow: data/market_store/000039.SZ/000039.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000039.SZ qmt_10min: data/market_store/000039.SZ/000039.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:58:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[29/5510] ok 000037.SZ
+[export] 000037.SZ tushare_daily: data/market_store/000037.SZ/000037.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000037.SZ tushare_moneyflow: data/market_store/000037.SZ/000037.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000037.SZ qmt_10min: data/market_store/000037.SZ/000037.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:58:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[30/5510] ok 000050.SZ
+[export] 000050.SZ tushare_daily: data/market_store/000050.SZ/000050.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000050.SZ tushare_moneyflow: data/market_store/000050.SZ/000050.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000050.SZ qmt_10min: data/market_store/000050.SZ/000050.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:59:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[31/5510] ok 000058.SZ
+[export] 000058.SZ tushare_daily: data/market_store/000058.SZ/000058.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000058.SZ tushare_moneyflow: data/market_store/000058.SZ/000058.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000058.SZ qmt_10min: data/market_store/000058.SZ/000058.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:59:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[32/5510] ok 000055.SZ
+[export] 000055.SZ tushare_daily: data/market_store/000055.SZ/000055.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000055.SZ tushare_moneyflow: data/market_store/000055.SZ/000055.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000055.SZ qmt_10min: data/market_store/000055.SZ/000055.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:59:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[33/5510] ok 000056.SZ
+[export] 000056.SZ tushare_daily: data/market_store/000056.SZ/000056.SZ_tushare_daily.parquet rows=529 added=529 window=20240214-20260424
+[export] 000056.SZ tushare_moneyflow: data/market_store/000056.SZ/000056.SZ_tushare_moneyflow.parquet rows=57 added=57 window=20260124-20260424
+[export] 000056.SZ qmt_10min: data/market_store/000056.SZ/000056.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:59:15*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[34/5510] ok 000036.SZ
+[export] 000036.SZ tushare_daily: data/market_store/000036.SZ/000036.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000036.SZ tushare_moneyflow: data/market_store/000036.SZ/000036.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000036.SZ qmt_10min: data/market_store/000036.SZ/000036.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:00:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[35/5510] ok 000062.SZ
+[export] 000062.SZ tushare_daily: data/market_store/000062.SZ/000062.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000062.SZ tushare_moneyflow: data/market_store/000062.SZ/000062.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000062.SZ qmt_10min: data/market_store/000062.SZ/000062.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:01:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:01:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[36/5510] ok 000049.SZ
+[export] 000049.SZ tushare_daily: data/market_store/000049.SZ/000049.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000049.SZ tushare_moneyflow: data/market_store/000049.SZ/000049.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000049.SZ qmt_10min: data/market_store/000049.SZ/000049.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[37/5510] ok 000045.SZ
+[export] 000045.SZ tushare_daily: data/market_store/000045.SZ/000045.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000045.SZ tushare_moneyflow: data/market_store/000045.SZ/000045.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000045.SZ qmt_10min: data/market_store/000045.SZ/000045.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:01:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[38/5510] ok 000065.SZ
+[export] 000065.SZ tushare_daily: data/market_store/000065.SZ/000065.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000065.SZ tushare_moneyflow: data/market_store/000065.SZ/000065.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000065.SZ qmt_10min: data/market_store/000065.SZ/000065.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:01:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[39/5510] ok 000060.SZ
+[export] 000060.SZ tushare_daily: data/market_store/000060.SZ/000060.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000060.SZ tushare_moneyflow: data/market_store/000060.SZ/000060.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000060.SZ qmt_10min: data/market_store/000060.SZ/000060.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:01:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[40/5510] ok 000066.SZ
+[export] 000066.SZ tushare_daily: data/market_store/000066.SZ/000066.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000066.SZ tushare_moneyflow: data/market_store/000066.SZ/000066.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000066.SZ qmt_10min: data/market_store/000066.SZ/000066.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:03:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[41/5510] ok 000078.SZ
+[export] 000078.SZ tushare_daily: data/market_store/000078.SZ/000078.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000078.SZ tushare_moneyflow: data/market_store/000078.SZ/000078.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000078.SZ qmt_10min: data/market_store/000078.SZ/000078.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:03:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[42/5510] ok 000068.SZ
+[export] 000068.SZ tushare_daily: data/market_store/000068.SZ/000068.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000068.SZ tushare_moneyflow: data/market_store/000068.SZ/000068.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000068.SZ qmt_10min: data/market_store/000068.SZ/000068.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:04:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:04:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[43/5510] ok 000032.SZ
+[export] 000032.SZ tushare_daily: data/market_store/000032.SZ/000032.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000032.SZ tushare_moneyflow: data/market_store/000032.SZ/000032.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000032.SZ qmt_10min: data/market_store/000032.SZ/000032.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[44/5510] ok 000059.SZ
+[export] 000059.SZ tushare_daily: data/market_store/000059.SZ/000059.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000059.SZ tushare_moneyflow: data/market_store/000059.SZ/000059.SZ_tushare_moneyflow.parquet rows=0 added=0 window=20260124-20260424
+[export] 000059.SZ qmt_10min: data/market_store/000059.SZ/000059.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:05:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[45/5510] ok 000090.SZ
+[export] 000090.SZ tushare_daily: data/market_store/000090.SZ/000090.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000090.SZ tushare_moneyflow: data/market_store/000090.SZ/000090.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000090.SZ qmt_10min: data/market_store/000090.SZ/000090.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:06:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:06:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[46/5510] ok 000063.SZ
+[export] 000063.SZ tushare_daily: data/market_store/000063.SZ/000063.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000063.SZ tushare_moneyflow: data/market_store/000063.SZ/000063.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000063.SZ qmt_10min: data/market_store/000063.SZ/000063.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[47/5510] ok 000088.SZ
+[export] 000088.SZ tushare_daily: data/market_store/000088.SZ/000088.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000088.SZ tushare_moneyflow: data/market_store/000088.SZ/000088.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000088.SZ qmt_10min: data/market_store/000088.SZ/000088.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:06:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:06:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[48/5510] ok 000061.SZ
+[export] 000061.SZ tushare_daily: data/market_store/000061.SZ/000061.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000061.SZ tushare_moneyflow: data/market_store/000061.SZ/000061.SZ_tushare_moneyflow.parquet rows=0 added=0 window=20260124-20260424
+[export] 000061.SZ qmt_10min: data/market_store/000061.SZ/000061.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:07:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[49/5510] ok 000096.SZ
+[export] 000096.SZ tushare_daily: data/market_store/000096.SZ/000096.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000096.SZ tushare_moneyflow: data/market_store/000096.SZ/000096.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000096.SZ qmt_10min: data/market_store/000096.SZ/000096.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[50/5510] ok 000070.SZ
+[export] 000070.SZ tushare_daily: data/market_store/000070.SZ/000070.SZ_tushare_daily.parquet rows=528 added=528 window=20240214-20260424
+[export] 000070.SZ tushare_moneyflow: data/market_store/000070.SZ/000070.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000070.SZ qmt_10min: data/market_store/000070.SZ/000070.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:07:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[51/5510] ok 000089.SZ
+[export] 000089.SZ tushare_daily: data/market_store/000089.SZ/000089.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000089.SZ tushare_moneyflow: data/market_store/000089.SZ/000089.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000089.SZ qmt_10min: data/market_store/000089.SZ/000089.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:07:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[52/5510] ok 000153.SZ
+[export] 000153.SZ tushare_daily: data/market_store/000153.SZ/000153.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000153.SZ tushare_moneyflow: data/market_store/000153.SZ/000153.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000153.SZ qmt_10min: data/market_store/000153.SZ/000153.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:08:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[53/5510] ok 000099.SZ
+[export] 000099.SZ tushare_daily: data/market_store/000099.SZ/000099.SZ_tushare_daily.parquet rows=530 added=0 window=20260422-20260424
+[export] 000099.SZ tushare_moneyflow: data/market_store/000099.SZ/000099.SZ_tushare_moneyflow.parquet rows=58 added=0 window=20260422-20260424
+[export] 000099.SZ qmt_10min: data/market_store/000099.SZ/000099.SZ_qmt_10min.parquet rows=1392 added=0 window=20260422-20260424
+***** xtdata连接成功 2026-04-24 23:09:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[54/5510] ok 000157.SZ
+[export] 000157.SZ tushare_daily: data/market_store/000157.SZ/000157.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000157.SZ tushare_moneyflow: data/market_store/000157.SZ/000157.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000157.SZ qmt_10min: data/market_store/000157.SZ/000157.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:09:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:09:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[55/5510] ok 000069.SZ
+[export] 000069.SZ tushare_daily: data/market_store/000069.SZ/000069.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000069.SZ tushare_moneyflow: data/market_store/000069.SZ/000069.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000069.SZ qmt_10min: data/market_store/000069.SZ/000069.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[56/5510] ok 000151.SZ
+[export] 000151.SZ tushare_daily: data/market_store/000151.SZ/000151.SZ_tushare_daily.parquet rows=522 added=522 window=20240214-20260424
+[export] 000151.SZ tushare_moneyflow: data/market_store/000151.SZ/000151.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000151.SZ qmt_10min: data/market_store/000151.SZ/000151.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:10:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[57/5510] ok 000155.SZ
+[export] 000155.SZ tushare_daily: data/market_store/000155.SZ/000155.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000155.SZ tushare_moneyflow: data/market_store/000155.SZ/000155.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000155.SZ qmt_10min: data/market_store/000155.SZ/000155.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:11:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[58/5510] ok 000158.SZ
+[export] 000158.SZ tushare_daily: data/market_store/000158.SZ/000158.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000158.SZ tushare_moneyflow: data/market_store/000158.SZ/000158.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000158.SZ qmt_10min: data/market_store/000158.SZ/000158.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:11:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[59/5510] ok 000159.SZ
+[export] 000159.SZ tushare_daily: data/market_store/000159.SZ/000159.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000159.SZ tushare_moneyflow: data/market_store/000159.SZ/000159.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000159.SZ qmt_10min: data/market_store/000159.SZ/000159.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:12:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[60/5510] ok 000156.SZ
+[export] 000156.SZ tushare_daily: data/market_store/000156.SZ/000156.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000156.SZ tushare_moneyflow: data/market_store/000156.SZ/000156.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000156.SZ qmt_10min: data/market_store/000156.SZ/000156.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:13:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[61/5510] ok 000100.SZ
+[export] 000100.SZ tushare_daily: data/market_store/000100.SZ/000100.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000100.SZ tushare_moneyflow: data/market_store/000100.SZ/000100.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000100.SZ qmt_10min: data/market_store/000100.SZ/000100.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:13:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:13:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[62/5510] ok 000401.SZ
+[export] 000401.SZ tushare_daily: data/market_store/000401.SZ/000401.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000401.SZ tushare_moneyflow: data/market_store/000401.SZ/000401.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000401.SZ qmt_10min: data/market_store/000401.SZ/000401.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:14:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[63/5510] ok 000166.SZ
+[export] 000166.SZ tushare_daily: data/market_store/000166.SZ/000166.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000166.SZ tushare_moneyflow: data/market_store/000166.SZ/000166.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000166.SZ qmt_10min: data/market_store/000166.SZ/000166.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:14:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[64/5510] ok 000338.SZ
+[export] 000338.SZ tushare_daily: data/market_store/000338.SZ/000338.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000338.SZ tushare_moneyflow: data/market_store/000338.SZ/000338.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000338.SZ qmt_10min: data/market_store/000338.SZ/000338.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:14:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[65/5510] ok 000333.SZ
+[export] 000333.SZ tushare_daily: data/market_store/000333.SZ/000333.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000333.SZ tushare_moneyflow: data/market_store/000333.SZ/000333.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000333.SZ qmt_10min: data/market_store/000333.SZ/000333.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[66/5510] ok 000403.SZ
+[export] 000403.SZ tushare_daily: data/market_store/000403.SZ/000403.SZ_tushare_daily.parquet rows=528 added=528 window=20240214-20260424
+[export] 000403.SZ tushare_moneyflow: data/market_store/000403.SZ/000403.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000403.SZ qmt_10min: data/market_store/000403.SZ/000403.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:15:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[67/5510] ok 000409.SZ
+[export] 000409.SZ tushare_daily: data/market_store/000409.SZ/000409.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000409.SZ tushare_moneyflow: data/market_store/000409.SZ/000409.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000409.SZ qmt_10min: data/market_store/000409.SZ/000409.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:16:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:17:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[68/5510] ok 000301.SZ
+[export] 000301.SZ tushare_daily: data/market_store/000301.SZ/000301.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000301.SZ tushare_moneyflow: data/market_store/000301.SZ/000301.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000301.SZ qmt_10min: data/market_store/000301.SZ/000301.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:17:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[69/5510] ok 000400.SZ
+[export] 000400.SZ tushare_daily: data/market_store/000400.SZ/000400.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000400.SZ tushare_moneyflow: data/market_store/000400.SZ/000400.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000400.SZ qmt_10min: data/market_store/000400.SZ/000400.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[70/5510] ok 000411.SZ
+[export] 000411.SZ tushare_daily: data/market_store/000411.SZ/000411.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000411.SZ tushare_moneyflow: data/market_store/000411.SZ/000411.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000411.SZ qmt_10min: data/market_store/000411.SZ/000411.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:17:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:17:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[71/5510] ok 000410.SZ
+[export] 000410.SZ tushare_daily: data/market_store/000410.SZ/000410.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000410.SZ tushare_moneyflow: data/market_store/000410.SZ/000410.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000410.SZ qmt_10min: data/market_store/000410.SZ/000410.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+[72/5510] ok 000402.SZ
+[export] 000402.SZ tushare_daily: data/market_store/000402.SZ/000402.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000402.SZ tushare_moneyflow: data/market_store/000402.SZ/000402.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000402.SZ qmt_10min: data/market_store/000402.SZ/000402.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:18:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[73/5510] ok 000419.SZ
+[export] 000419.SZ tushare_daily: data/market_store/000419.SZ/000419.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000419.SZ tushare_moneyflow: data/market_store/000419.SZ/000419.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000419.SZ qmt_10min: data/market_store/000419.SZ/000419.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:18:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[74/5510] ok 000420.SZ
+[export] 000420.SZ tushare_daily: data/market_store/000420.SZ/000420.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000420.SZ tushare_moneyflow: data/market_store/000420.SZ/000420.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000420.SZ qmt_10min: data/market_store/000420.SZ/000420.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:19:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[75/5510] ok 000407.SZ
+[export] 000407.SZ tushare_daily: data/market_store/000407.SZ/000407.SZ_tushare_daily.parquet rows=520 added=520 window=20240214-20260424
+[export] 000407.SZ tushare_moneyflow: data/market_store/000407.SZ/000407.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000407.SZ qmt_10min: data/market_store/000407.SZ/000407.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:19:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[76/5510] ok 000417.SZ
+[export] 000417.SZ tushare_daily: data/market_store/000417.SZ/000417.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000417.SZ tushare_moneyflow: data/market_store/000417.SZ/000417.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000417.SZ qmt_10min: data/market_store/000417.SZ/000417.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:19:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[77/5510] ok 000415.SZ
+[export] 000415.SZ tushare_daily: data/market_store/000415.SZ/000415.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000415.SZ tushare_moneyflow: data/market_store/000415.SZ/000415.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000415.SZ qmt_10min: data/market_store/000415.SZ/000415.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:20:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[78/5510] ok 000404.SZ
+[export] 000404.SZ tushare_daily: data/market_store/000404.SZ/000404.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000404.SZ tushare_moneyflow: data/market_store/000404.SZ/000404.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000404.SZ qmt_10min: data/market_store/000404.SZ/000404.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:21:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[79/5510] ok 000429.SZ
+[export] 000429.SZ tushare_daily: data/market_store/000429.SZ/000429.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000429.SZ tushare_moneyflow: data/market_store/000429.SZ/000429.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000429.SZ qmt_10min: data/market_store/000429.SZ/000429.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:21:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[80/5510] ok 000408.SZ
+[export] 000408.SZ tushare_daily: data/market_store/000408.SZ/000408.SZ_tushare_daily.parquet rows=525 added=525 window=20240214-20260424
+[export] 000408.SZ tushare_moneyflow: data/market_store/000408.SZ/000408.SZ_tushare_moneyflow.parquet rows=0 added=0 window=20260124-20260424
+[export] 000408.SZ qmt_10min: data/market_store/000408.SZ/000408.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:23:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[81/5510] ok 000430.SZ
+[export] 000430.SZ tushare_daily: data/market_store/000430.SZ/000430.SZ_tushare_daily.parquet rows=526 added=526 window=20240214-20260424
+[export] 000430.SZ tushare_moneyflow: data/market_store/000430.SZ/000430.SZ_tushare_moneyflow.parquet rows=57 added=57 window=20260124-20260424
+[export] 000430.SZ qmt_10min: data/market_store/000430.SZ/000430.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:23:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[82/5510] ok 000428.SZ
+[export] 000428.SZ tushare_daily: data/market_store/000428.SZ/000428.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000428.SZ tushare_moneyflow: data/market_store/000428.SZ/000428.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000428.SZ qmt_10min: data/market_store/000428.SZ/000428.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:24:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[83/5510] ok 000488.SZ
+[export] 000488.SZ tushare_daily: data/market_store/000488.SZ/000488.SZ_tushare_daily.parquet rows=529 added=529 window=20240214-20260424
+[export] 000488.SZ tushare_moneyflow: data/market_store/000488.SZ/000488.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000488.SZ qmt_10min: data/market_store/000488.SZ/000488.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:25:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+***** xtdata连接成功 2026-04-24 23:25:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[84/5510] ok 000422.SZ
+[export] 000422.SZ tushare_daily: data/market_store/000422.SZ/000422.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424
+[export] 000422.SZ tushare_moneyflow: data/market_store/000422.SZ/000422.SZ_tushare_moneyflow.parquet rows=58 added=58 window=20260124-20260424
+[export] 000422.SZ qmt_10min: data/market_store/000422.SZ/000422.SZ_qmt_10min.parquet rows=0 added=0 window=20260124-20260424
+***** xtdata连接成功 2026-04-24 23:26:16*****
+服务信息: {'tag': 'sp3', 'version': '1.0'}
+服务地址: 127.0.0.1:58610
+数据路径: D:\gjzqqmt\QMTclient\bin.x64/../userdata_mini/datadir
+设置xtdata.enable_hello = False可隐藏此消息
+
+[85/5510] ok 000426.SZ
+[export] 000426.SZ tushare_daily: data/market_store/000426.SZ/000426.SZ_tushare_daily.parquet rows=530 added=530 window=20240214-20260424

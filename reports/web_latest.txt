@@ -1,0 +1,3 @@
+﻿PID=50008
+LOG=reports/web_20260425_094053.log
+ERR=reports/web_20260425_094053.err.log

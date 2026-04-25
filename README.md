@@ -3,10 +3,16 @@
 A 股数据采集与技术指标分析项目（Tushare + QMT）。
 
 ## 当前数据口径（仅 Parquet）
-每只股票固定 3 个 Parquet 文件：
+每只股票基础数据固定 3 个 Parquet 文件：
 1. `Tushare` 日线
 2. `Tushare` 资金流
 3. `QMT` 10 分钟线
+
+扩展资金流数据：
+- 个股：`{ts_code}_tushare_moneyflow_dc.parquet`
+- 市场：`data/market_store/_market/moneyflow_mkt_dc.parquet`
+- 板块：`data/market_store/_market/moneyflow_ind_dc.parquet`
+- 沪深港通：`data/market_store/_market/moneyflow_hsgt.parquet`
 
 特点：
 - 首次全量，后续自动增量
@@ -74,6 +80,33 @@ python scripts/data/export_tushare_qmt_all.py --all --full-refresh --daily-days 
 ### 4) 单只股票调试
 ```bash
 python scripts/data/export_tushare_qmt_all.py --ts-code 000099.SZ --daily-days 500 --minute-days 90 --out-dir data/market_store
+```
+
+## 扩展资金流导出
+
+脚本：`scripts/data/fetch_moneyflow_history.py`
+
+默认抓取过去一年，包含个股资金流向（DC）、东财行业/概念板块资金流向（DC）、大盘资金流向（DC）、沪深港通资金流向。
+
+```powershell
+.\.venv\Scripts\python.exe scripts\data\fetch_moneyflow_history.py --all --workers 4
+```
+
+只更新板块、大盘、沪深港通：
+```powershell
+.\.venv\Scripts\python.exe scripts\data\fetch_moneyflow_history.py --market-only
+```
+
+完整数据清单见：`docs/tushare_stock_analysis_data.md`
+
+## 数据输出验证
+
+脚本：`scripts/data/validate_analysis_outputs.py`
+
+检查指定股票的日线、传统资金流、东财个股资金流、QMT 10 分钟线（默认可选）、大盘资金流、板块资金流、沪深港通资金流是否能成功读取，并验证日线指标链能否计算。
+
+```powershell
+.\.venv\Scripts\python.exe scripts\data\validate_analysis_outputs.py --ts-code 000001.SZ
 ```
 
 ## Web 控制台

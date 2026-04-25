@@ -1,3 +1,0 @@
-﻿PID=23788
-LOG=reports/full_export_20260424_232505.log
-ERR=reports/full_export_20260424_232505.err.log

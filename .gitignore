@@ -55,9 +55,13 @@ Thumbs.db
 # =============================================
 # 项目特定
 # =============================================
-*.db            # SQLite 数据库
-*.log           # 日志文件
-*.tmp           # 临时文件
+# SQLite databases
+*.db
+
+# Runtime logs and temporary files
+*.log
+*.err.log
+*.tmp
 .env
 
 # QMT 相关（本地客户端数据不同步）
@@ -68,9 +72,11 @@ Thumbs.db
 *.csv
 *.parquet
 *.feather
-data/
-data/market_csv/
-data/market_store/
+/data/
+/output/
+/reports/*.log
+/reports/*.err.log
+/reports/*latest.txt
 
 # =============================================
 # WorkBuddy

@@ -12,6 +12,7 @@ import sys
 from email.mime.text import MIMEText
 from pathlib import Path
 
+from dotenv import dotenv_values
 from flask import Flask, jsonify, render_template, request, session
 from werkzeug.security import check_password_hash, generate_password_hash
 
@@ -25,11 +26,26 @@ from stock_analyst.stock_reference import lookup_stock_reference, normalize_ts_c
 DB_PATH = ROOT / "stock_analyst.db"
 TS_CODE_RE = re.compile(r"^\d{6}\.(SZ|SH)$", re.IGNORECASE)
 
-SMTP_HOST = os.getenv("SMTP_HOST", "smtp.qiye.aliyun.com")
-SMTP_PORT = int(os.getenv("SMTP_PORT", "465"))
-SMTP_USERNAME = os.getenv("SMTP_USERNAME", "stock@cuixiaoyuan.cn")
-SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "weijie1981")
-SMTP_FROM = os.getenv("SMTP_FROM", SMTP_USERNAME)
+_ENV_VALUES = dotenv_values(ROOT / ".env") if (ROOT / ".env").exists() else {}
+
+
+def _env_get(key: str, default: str = "") -> str:
+    value = os.getenv(key)
+    if value is not None and str(value).strip() != "":
+        return str(value).strip().strip('"').strip("'")
+    value = _ENV_VALUES.get(key)
+    if value is None:
+        value = _ENV_VALUES.get("\ufeff" + key)
+    if value is None:
+        return default
+    return str(value).strip().strip('"').strip("'")
+
+
+SMTP_HOST = _env_get("SMTP_HOST")
+SMTP_PORT = int(_env_get("SMTP_PORT", "465"))
+SMTP_USERNAME = _env_get("SMTP_USERNAME")
+SMTP_PASSWORD = _env_get("SMTP_PASSWORD")
+SMTP_FROM = _env_get("SMTP_FROM", SMTP_USERNAME)
 
 app = Flask(
     __name__,
@@ -58,7 +74,9 @@ def get_conn() -> sqlite3.Connection:
 
 def send_email(subject: str, recipient: str, html_body: str) -> None:
     if not recipient:
-        raise ValueError("用户未设置邮箱，无法发送邮件。")
+        raise ValueError("???????????????")
+    if not SMTP_HOST or not SMTP_USERNAME or not SMTP_PASSWORD or not SMTP_FROM:
+        raise ValueError("SMTP ???????? .env ??? SMTP_HOST/SMTP_PORT/SMTP_USERNAME/SMTP_PASSWORD/SMTP_FROM")
     message = MIMEText(html_body, "html", "utf-8")
     message["Subject"] = subject
     message["From"] = SMTP_FROM

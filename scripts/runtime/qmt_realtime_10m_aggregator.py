@@ -27,7 +27,8 @@ def load_token() -> str:
     env = ROOT / ".env"
     if env.exists():
         vals = dotenv_values(env)
-        return (vals.get("TUSHARE_TOKEN") or "").strip().strip('"').strip("'")
+        tok = vals.get("TUSHARE_TOKEN") or vals.get("\ufeffTUSHARE_TOKEN") or ""
+        return str(tok).strip().strip('"').strip("'")
     return ""
 
 
@@ -283,4 +284,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

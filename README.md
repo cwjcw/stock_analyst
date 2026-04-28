@@ -57,6 +57,15 @@ pip install -r requirements.txt
 
 3. 配置 `.env`（至少包含 `TUSHARE_TOKEN`）
 
+邮件相关配置（注册欢迎邮件、找回密码邮件）也统一放在 `.env`：
+```bash
+SMTP_HOST=smtp.example.com
+SMTP_PORT=465
+SMTP_USERNAME=your_email@example.com
+SMTP_PASSWORD=your_smtp_password_or_app_password
+SMTP_FROM=your_email@example.com
+```
+
 ## 数据导出命令
 脚本：`scripts/data/export_tushare_qmt_all.py`
 
@@ -98,6 +107,21 @@ python scripts/data/export_tushare_qmt_all.py --ts-code 000099.SZ --daily-days 5
 ```
 
 完整数据清单见：`docs/tushare_stock_analysis_data.md`
+
+## 扩展分析指标导出
+
+脚本：`scripts/data/fetch_analysis_factors.py`
+
+用于补充报告中的估值、活跃度、备用行情、财务质量、三张表、北向活跃股、股东结构、业绩预告/快报、涨跌停情绪等数据。
+
+```powershell
+.\.venv\Scripts\python.exe scripts\data\fetch_analysis_factors.py --all-watchlist --user-id cwjcw --workers 3
+```
+
+单只股票调试：
+```powershell
+.\.venv\Scripts\python.exe scripts\data\fetch_analysis_factors.py --ts-code 601398.SH --workers 1
+```
 
 ## 数据输出验证
 

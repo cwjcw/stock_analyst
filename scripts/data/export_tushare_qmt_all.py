@@ -28,7 +28,8 @@ def load_token() -> str:
     env = ROOT / ".env"
     if env.exists():
         vals = dotenv_values(env)
-        return (vals.get("TUSHARE_TOKEN") or "").strip().strip('"').strip("'")
+        tok = vals.get("TUSHARE_TOKEN") or vals.get("\ufeffTUSHARE_TOKEN") or ""
+        return str(tok).strip().strip('"').strip("'")
     return ""
 
 
@@ -49,7 +50,7 @@ def stock_paths(root_out_dir: Path, ts_code: str) -> dict[str, Path]:
     ensure_dir(stock_dir)
     return {
         "tushare_daily": stock_dir / f"{ts_code}_tushare_daily.parquet",
-        "tushare_moneyflow": stock_dir / f"{ts_code}_tushare_moneyflow.parquet",
+        "tushare_moneyflow_dc": stock_dir / f"{ts_code}_tushare_moneyflow_dc.parquet",
         "qmt_10min": stock_dir / f"{ts_code}_qmt_10min.parquet",
     }
 
@@ -162,17 +163,19 @@ def export_one_stock(
         "end": end_s,
     }
 
-    # 2) Tushare moneyflow incremental
-    last_mf = read_last_ymd(paths["tushare_moneyflow"], "trade_date")
+    # 2) Tushare moneyflow_dc incremental (Eastmoney historical flow)
+    last_mf = read_last_ymd(paths["tushare_moneyflow_dc"], "trade_date")
     start_mf = default_minute_start
     if (not full_refresh) and last_mf:
         start_mf = max(default_minute_start, shift_ymd(last_mf, -abs(overlap_days)))
-    df_mf = pro.moneyflow(ts_code=ts_code, start_date=start_mf, end_date=end_s)
+    # moneyflow_dc starts from 20230911
+    start_mf = max(start_mf, "20230911")
+    df_mf = pro.moneyflow_dc(ts_code=ts_code, start_date=start_mf, end_date=end_s)
     if df_mf is None or df_mf.empty:
         df_mf = pd.DataFrame(columns=["ts_code", "trade_date"])
-    old_len, new_len = upsert_parquet(df_mf, paths["tushare_moneyflow"], ["ts_code", "trade_date"], "trade_date")
-    result["tushare_moneyflow"] = {
-        "path": paths["tushare_moneyflow"].as_posix(),
+    old_len, new_len = upsert_parquet(df_mf, paths["tushare_moneyflow_dc"], ["ts_code", "trade_date"], "trade_date")
+    result["tushare_moneyflow_dc"] = {
+        "path": paths["tushare_moneyflow_dc"].as_posix(),
         "old_rows": old_len,
         "new_rows": new_len,
         "added_rows": new_len - old_len,

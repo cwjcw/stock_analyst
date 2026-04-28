@@ -41,6 +41,27 @@
 
 ## 建议继续纳入的个股分析数据
 
+以下数据已由 [fetch_analysis_factors.py](../scripts/data/fetch_analysis_factors.py) 纳入本地采集，并由 [generate_md_report.py](../scripts/report/generate_md_report.py) 汇总写入 Markdown：
+
+- `daily_basic`
+- `bak_daily`
+- `fina_indicator`
+- `income`
+- `balancesheet`
+- `cashflow`
+- `hsgt_top10`
+- `top10_holders`
+- `top10_floatholders`
+- `forecast`
+- `express`
+- `limit_list_d`
+
+运行命令：
+
+```powershell
+.\.venv\Scripts\python.exe scripts\data\fetch_analysis_factors.py --all-watchlist --user-id cwjcw --workers 3
+```
+
 ### 趋势和量价
 
 - `daily` / `pro_bar`：日线行情。

@@ -20,9 +20,20 @@ def selected_minutes_dir() -> Path:
     return ROOT / "data" / "qmt_selected_minutes"
 
 
-def report_path(ts_code: str) -> Path:
+def _safe_filename_part(text: str) -> str:
+    cleaned = "".join(ch for ch in str(text or "").strip() if ch not in '<>:"/\\|?*')
+    return cleaned.replace(" ", "_")
+
+
+def report_path(ts_code: str, stock_name: str | None = None) -> Path:
     today = dt.date.today().strftime("%Y%m%d")
-    return ROOT / "reports" / f"{ts_code.replace('.', '_')}_indicator_report_{today}.md"
+    code_part = ts_code.replace(".", "_")
+    name_part = _safe_filename_part(stock_name or "")
+    if name_part:
+        filename = f"{code_part}_{name_part}_indicator_report_{today}.md"
+    else:
+        filename = f"{code_part}_indicator_report_{today}.md"
+    return ROOT / "reports" / filename
 
 
 def load_daily_parquet(ts_code: str) -> tuple[pd.DataFrame, str]:
@@ -37,7 +48,7 @@ def load_daily_parquet(ts_code: str) -> tuple[pd.DataFrame, str]:
 
 
 def load_moneyflow_parquet(ts_code: str) -> tuple[pd.DataFrame, str]:
-    path = market_store_dir(ts_code) / f"{ts_code}_tushare_moneyflow.parquet"
+    path = market_store_dir(ts_code) / f"{ts_code}_tushare_moneyflow_dc.parquet"
     if not path.exists():
         return pd.DataFrame(), path.as_posix()
     df = pd.read_parquet(path)
@@ -63,6 +74,10 @@ def load_minute_sequence(ts_code: str, period: str = "1m", lookback_days: int = 
         if df.empty or "ts_code" not in df.columns:
             continue
         df = df[df["ts_code"].astype(str).str.upper() == ts_code.upper()].copy()
+        if "close" in df.columns:
+            df = df[pd.to_numeric(df["close"], errors="coerce").notna()].copy()
+        if "suspendFlag" in df.columns:
+            df = df[df["suspendFlag"].astype(str) != "1"].copy()
         if df.empty:
             continue
         used_files.append(path.as_posix())
@@ -116,4 +131,3 @@ def compute_minute_chain(ts_code: str, period: str = "1m", lookback_days: int = 
     last = calc.iloc[-1]
     trend, summary = summarize_signal(last)
     return {"source": source, "raw": raw, "calc": calc, "last": last, "trend": trend, "summary": summary}
-

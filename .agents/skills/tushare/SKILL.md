@@ -259,7 +259,7 @@ export TUSHARE_TOKEN=your_token
 
 常用接口：
 
-- `moneyflow`
+- `moneyflow_dc`
 - `moneyflow_hsgt`
 - `hsgt_top10`
 - `top_list`
@@ -725,9 +725,11 @@ export TUSHARE_TOKEN=your_token
 - `cashflow`
 - `forecast`
 - `express`
-- `moneyflow`
+- `moneyflow_dc`
 - `moneyflow_hsgt`
 - `hsgt_top10`
+- `moneyflow_ind_dc`
+- `moneyflow_mkt_dc`
 - `top_list`
 - `index_basic`
 - `index_daily`

@@ -4,87 +4,90 @@ import argparse
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "src"
-sys.path.insert(0, str(SRC))
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
-from stock_analyst.db import connect_db
-
-
-def ensure_user(conn, user_code: str, user_name: str) -> int:
-    with conn.cursor() as cur:
-        cur.execute(
-            """
-            INSERT INTO users (user_code, user_name, is_active)
-            VALUES (%s,%s,1)
-            ON DUPLICATE KEY UPDATE user_name=VALUES(user_name), is_active=1
-            """,
-            (user_code, user_name),
-        )
-        conn.commit()
-        cur.execute("SELECT id FROM users WHERE user_code=%s", (user_code,))
-        return int(cur.fetchone()[0])
+from stock_analyst.db import connect_db, init_database_and_tables
+from stock_analyst.stock_reference import normalize_ts_code
 
 
-def add_stock(conn, user_id: int, ts_code: str) -> None:
-    with conn.cursor() as cur:
-        cur.execute(
-            """
-            INSERT INTO user_watchlist (user_id, ts_code, is_active)
-            VALUES (%s,%s,1)
-            ON DUPLICATE KEY UPDATE is_active=1
-            """,
-            (user_id, ts_code),
-        )
+def ensure_user(conn, user_id: str, display_name: str) -> None:
+    conn.execute(
+        """
+        INSERT INTO user_profiles (user_id, display_name)
+        VALUES (?, ?)
+        ON CONFLICT(user_id) DO UPDATE SET
+            display_name=excluded.display_name,
+            updated_at=datetime('now', 'localtime')
+        """,
+        (user_id, display_name),
+    )
     conn.commit()
 
 
-def remove_stock(conn, user_id: int, ts_code: str) -> None:
-    with conn.cursor() as cur:
-        cur.execute(
-            "UPDATE user_watchlist SET is_active=0 WHERE user_id=%s AND ts_code=%s",
-            (user_id, ts_code),
-        )
+def add_stock(conn, user_id: str, ts_code: str, stock_name: str = "", group_name: str = "默认分组") -> None:
+    conn.execute(
+        """
+        INSERT INTO stocks (stock_id, stock_name, user_id, group_name)
+        VALUES (?, ?, ?, ?)
+        ON CONFLICT(stock_id, user_id, group_name) DO UPDATE SET
+            stock_name=excluded.stock_name
+        """,
+        (normalize_ts_code(ts_code), stock_name, user_id, group_name),
+    )
     conn.commit()
 
 
-def list_stocks(conn, user_code: str) -> None:
-    with conn.cursor() as cur:
-        cur.execute(
-            """
-            SELECT u.user_code, w.ts_code, w.is_active
-            FROM users u
-            LEFT JOIN user_watchlist w ON w.user_id=u.id
-            WHERE u.user_code=%s
-            ORDER BY w.ts_code
-            """,
-            (user_code,),
+def remove_stock(conn, user_id: str, ts_code: str, group_name: str | None = None) -> None:
+    ts_code = normalize_ts_code(ts_code)
+    if group_name:
+        conn.execute(
+            "DELETE FROM stocks WHERE user_id=? AND stock_id=? AND group_name=?",
+            (user_id, ts_code, group_name),
         )
-        rows = cur.fetchall()
-    print(f"user={user_code}")
-    for r in rows:
-        if r[1] is not None:
-            print(f"  {r[1]} active={r[2]}")
+    else:
+        conn.execute("DELETE FROM stocks WHERE user_id=? AND stock_id=?", (user_id, ts_code))
+    conn.commit()
+
+
+def list_stocks(conn, user_id: str) -> None:
+    rows = conn.execute(
+        """
+        SELECT stock_id, stock_name, group_name
+        FROM stocks
+        WHERE user_id=?
+        ORDER BY stock_id, group_name
+        """,
+        (user_id,),
+    ).fetchall()
+    print(f"user={user_id} count={len(rows)}")
+    for row in rows:
+        name = f" {row['stock_name']}" if row["stock_name"] else ""
+        print(f"  {row['stock_id']}{name} group={row['group_name']}")
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Manage users and watchlist")
-    parser.add_argument("--user-code", required=True)
+    parser = argparse.ArgumentParser(description="Manage local SQLite watchlist")
+    parser.add_argument("--user-code", required=True, help="local user_id, e.g. cwjcw")
     parser.add_argument("--user-name", default="user")
+    parser.add_argument("--group-name", default="默认分组")
     parser.add_argument("--add", nargs="*", default=[])
     parser.add_argument("--remove", nargs="*", default=[])
     parser.add_argument("--list", action="store_true")
     args = parser.parse_args()
 
+    init_database_and_tables()
     conn = connect_db()
     try:
-        user_id = ensure_user(conn, args.user_code, args.user_name)
+        ensure_user(conn, args.user_code, args.user_name)
         for code in args.add:
-            add_stock(conn, user_id, code)
-            print(f"added {code}")
+            add_stock(conn, args.user_code, code, group_name=args.group_name)
+            print(f"added {normalize_ts_code(code)}")
         for code in args.remove:
-            remove_stock(conn, user_id, code)
-            print(f"removed {code}")
+            remove_stock(conn, args.user_code, code, group_name=args.group_name)
+            print(f"removed {normalize_ts_code(code)}")
         if args.list or (not args.add and not args.remove):
             list_stocks(conn, args.user_code)
     finally:
@@ -93,4 +96,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
